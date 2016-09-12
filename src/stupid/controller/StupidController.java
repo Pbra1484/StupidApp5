@@ -27,7 +27,25 @@ public class StupidController
 	{
 		System.out.println("What is your Name?");
 		String userInput = readKeyboardInput.nextLine();
-		System.out.println("You said " + userInput);
+		System.out.println("Your name is " + userInput);
+		
+		System.out.println("What is your birthdate as an integer?");
+		Integer userInputQuestion2 = readKeyboardInput.nextInt();
+		System.out.println("Your birthay is " + userInputQuestion2);
+		readKeyboardInput.nextInt();
+		
+		System.out.println("Enter a number");
+		Double userInputQuestion3 = readKeyboardInput.nextDouble();
+		System.out.println("The result is " + userInputQuestion3);
+		readKeyboardInput.nextLine();
+		
+		System.out.println("Type a word here");
+		String userInputQuestion4 = readKeyboardInput.next();
+		System.out.println("You typed " + userInputQuestion4);
+		
+		System.out.println("If you typed more than a word it will apear here");
+		String userInputExtra = readKeyboardInput.nextLine();
+		System.out.println(userInputExtra);
 		
 	}
 }
